@@ -32,7 +32,7 @@ const CoursesList = ({ setCourseSelection }) => {
             <div className="heading">
                 <h1 className="header-1">Courses</h1>
                 <button>
-                    <ion-icon name="add-outline" color="#fff"></ion-icon>
+                    <ion-icon name="add-outline" style={{color: '#fff'}}></ion-icon>
                 </button>
             </div>
             <SemesterPicker activeSem={activeSemester} setActiveSem={setActiveSemester}/>
