@@ -20,6 +20,12 @@ body {
   overflow-y: hidden;
 }
 
+@media (max-height: 1000px) {
+  html {
+    font-size: 70%;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -63,6 +69,14 @@ button {
   border: 0;
   cursor: pointer;
   outline: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none !important; 
 }
 
 /* Sidebar */
@@ -133,7 +147,7 @@ button {
   height: 100%;
 }
 
-.course-details, .courses-list {
+.course-details, .courses-list, .course-form {
   background-color: #fff;
   border-radius: 1rem;
   height: 100%;
@@ -159,7 +173,7 @@ button {
 .course-details-header {
   grid-row: 1/4;
   border-radius: 1rem;
-  padding: .5rem 0;
+  //padding: .5rem 0;
 }
 
 .course-details-header-name{

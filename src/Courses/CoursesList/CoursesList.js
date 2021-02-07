@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import CourseTile from "./CourseTile"
 import SemesterPicker from "./SemesterPicker"
 import { courses } from '../../MockData/courses';
@@ -21,10 +22,6 @@ const CoursesList = ({ setCourseSelection }) => {
         }
     }
 
-    // useEffect(() => {
-    //     setActiveSemesterCourses();
-    // }, [activeSemester]);
-
     useEffect(setActiveSemesterCourses, [activeSemester]);
 
     return (
@@ -32,7 +29,9 @@ const CoursesList = ({ setCourseSelection }) => {
             <div className="heading">
                 <h1 className="header-1">Courses</h1>
                 <button>
-                    <ion-icon name="add-outline" style={{color: '#fff'}}></ion-icon>
+                    <Link to="/courses/form">
+                        <ion-icon name="add-outline" style={{color: '#fff'}}></ion-icon>
+                    </Link>
                 </button>
             </div>
             <SemesterPicker activeSem={activeSemester} setActiveSem={setActiveSemester}/>

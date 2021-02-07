@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const CourseTile = ({ course, setDetails }) => {
 
     var setSelectedCourse = (id) => {
@@ -5,14 +7,16 @@ const CourseTile = ({ course, setDetails }) => {
     }
 
     return (
-        <div className="course-tile" onClick={() => setSelectedCourse(course.id)}>
-            <div className="course-tile-img" style={{backgroundColor: course.color}}>
+        <Link to="/courses">
+            <div className="course-tile" onClick={() => setSelectedCourse(course.id)}>
+                <div className="course-tile-img" style={{backgroundColor: course.color}}>
+                </div>
+                <div className="course-tile-info">
+                    <h3>{ course.name }</h3>
+                    <p><b>W:</b> { course.lecture }, <b>L:</b> { course.lab }</p>
+                </div>
             </div>
-            <div className="course-tile-info">
-                <h3>{ course.name }</h3>
-                <p><b>W:</b> { course.lecture }, <b>L:</b> { course.lab }</p>
-            </div>
-        </div>
+        </Link>
     );
 }
  
