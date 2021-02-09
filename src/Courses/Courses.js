@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import CourseDetails from "./CourseDetails/CourseDetails"
 import CoursesList from "./CoursesList/CoursesList"
 import CourseForm from "./CourseForm";
