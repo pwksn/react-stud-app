@@ -20,7 +20,7 @@ body {
   overflow-y: hidden;
 }
 
-@media (max-height: 1000px) {
+@media (max-height: 900px) {
   html {
     font-size: 70%;
   }
@@ -62,6 +62,13 @@ code {
   font-weight: 700;
 }
 
+.loading-placeholder {
+  align-self: center;
+  justify-self: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-weight: 500;
+}
 
 /* Common */
 
@@ -77,6 +84,10 @@ button {
 
 a {
   text-decoration: none !important; 
+}
+
+.d-flex { 
+  display: flex;
 }
 
 /* Sidebar */
@@ -244,7 +255,7 @@ a {
   align-items: center;
 }
 
-.course-details-resources-tile-logo {
+.course-details-resources-tile-logo, .course-delete-logo {
   width: 5rem;
   height: 5rem;
   border-radius: 1rem;
@@ -302,7 +313,26 @@ a {
   background-color: #7e9af6;
 }
 
+.course-delete {
+  background-color: #dc143c;
+  grid-row: 9/11;
+  grid-column: 2/3;
+  height: 6rem;
+  width: 6rem;
+  justify-self: end;
+  align-self: end;
+  border-radius: 1rem;
+  padding: .5rem;
+  cursor: pointer;
+}
 
+.course-delete:hover {
+  background-color: #e34363;
+}
+
+.course-delete-logo {
+  background-color: #e34363;
+}
 
 /* Courses List */
 
@@ -329,6 +359,76 @@ a {
   padding: .5rem;
   max-height: 78vh;
   overflow-y: auto;
+}
+
+/* Course Form */
+
+.course-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem .5rem;
+}
+
+.course-form h1 {
+  padding: 0 1.5rem;
+}
+
+.course-form form, .course-form form .d-flex div {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  align-self: center;
+}
+
+.course-form form .d-flex div {
+  margin: 0 1rem;
+}
+
+.course-form input {
+  width: 15rem;
+  max-width: 15rem;
+  line-height: 1.5rem;
+  max-height: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid;
+  border-radius: 1rem;
+  background-color: #F2F2F2
+}
+
+.course-form input[type=color] {
+  max-width: 6rem;
+  height: 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+.course-form label {
+  margin: 2rem 0 .5rem 0;
+}
+
+.course-form button {
+  width: 5rem;
+  height: 2rem;
+  margin-top: 2rem;
+  color: #fff;
+  background-color: #222C67;
+  border-radius: 1rem;
+
+  align-self: center;
+  font-weight: 600;
+}
+
+.course-form button:hover {
+  background-color: #4e5685;
+}
+
+/* Prevent from displaying chrome extension ColorPick Eyedropper img  */
+.colorpick-eyedropper-input-trigger {
+  display: none !important;
 }
 
 /* Semester Picker */

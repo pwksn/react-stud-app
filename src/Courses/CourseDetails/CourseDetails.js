@@ -1,9 +1,18 @@
-import { courses } from '../../MockData/courses';
+import { useHistory } from "react-router-dom";
 import CourseResources from "./CourseResources";
 
-const CourseDetails = ({ courseID }) => {
+const CourseDetails = ({ courses, courseID }) => {
 
     const currentCourse = courses.filter(course => course.id === courseID)[0];
+    const history = useHistory();
+
+    const handleCourseDelete = () => {
+        fetch('http://localhost:8000/courses/' + currentCourse.id, {
+            method: 'DELETE'
+        }).then(() => {
+            history.push('/courses');
+        })
+    }
 
     return (
         <div className="course-details">
@@ -37,6 +46,12 @@ const CourseDetails = ({ courseID }) => {
             {currentCourse.upelLink && <div className="course-details-resources">
                 <CourseResources currentCourse={currentCourse}/>
             </div>}
+
+            <div className="course-delete" onClick={handleCourseDelete}>
+                <div className="course-delete-logo">
+                    <ion-icon name="trash-outline" style={{color: "#eee", width: '2rem', height: '2rem'}}></ion-icon>
+                </div>
+            </div>
         </div>
     );
 }
