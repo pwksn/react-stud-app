@@ -18,7 +18,7 @@ const CourseForm = ({ onCoursesPostSend }) => {
     const history = useHistory();
 
     const onFormCancel = () => {
-        history.push('/courses');
+        history.push('/courses/home');
     }
 
     const handleSubmit = (e) => {
@@ -45,7 +45,7 @@ const CourseForm = ({ onCoursesPostSend }) => {
         }).then(() => {
             setIsPostPending(false);
             //onCoursesPostSend();
-            history.push('/courses');
+            history.push('/courses/home');
         })
     }
 

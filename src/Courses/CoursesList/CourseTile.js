@@ -7,7 +7,7 @@ const CourseTile = ({ course, setDetails }) => {
     }
 
     return (
-        <Link to="/courses">
+        <Link to="/courses/home">
             <div className="course-tile" onClick={() => setSelectedCourse(course.id)}>
                 <div className="course-tile-img" style={{backgroundColor: course.color}}>
                 </div>

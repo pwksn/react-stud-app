@@ -159,6 +159,10 @@ a {
 
 /* Courses */
 
+.courses-box {
+  height: 100%;
+}
+
 .courses {
   display: grid;
   grid-template-columns: 25% 1fr;
@@ -249,7 +253,11 @@ a {
 
 .course-details-resources-tiles {
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
+}
+
+.course-details-resources-tiles div{
+  margin: 0 .5rem;
 }
 
 .course-details-resources-tile {
