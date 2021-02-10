@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const CourseForm = ({ onCoursesPostSend }) => {
 
@@ -14,6 +15,11 @@ const CourseForm = ({ onCoursesPostSend }) => {
     const [driveLink, setDriveLink] = useState('');
 
     const [isPostPending, setIsPostPending] = useState(false);
+    const history = useHistory();
+
+    const onFormCancel = () => {
+        history.push('/courses');
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -26,6 +32,7 @@ const CourseForm = ({ onCoursesPostSend }) => {
             location: courseLocation,
             lecturer: courseLecturer,
         };
+
         setIsPostPending(true);
 
         fetch('http://localhost:8000/courses', {
@@ -33,8 +40,9 @@ const CourseForm = ({ onCoursesPostSend }) => {
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify(newCourse)
         }).then(() => {
-            console.log('POST: new blog added.');
             setIsPostPending(false);
+            //onCoursesPostSend();
+            history.push('/courses');
         })
     }
 
@@ -127,8 +135,11 @@ const CourseForm = ({ onCoursesPostSend }) => {
                     onChange={(e) => setDriveLink(e.target.value)}
                 />
 
-                {!isPostPending && <button type="submit">Submit</button>}
-                {isPostPending && <button disabled type="submit">Wait...</button>}
+                <div className="d-flex">
+                    <button className="btn-cancel" onClick={onFormCancel}>Cancel</button>
+                    {!isPostPending && <button type="submit">Submit</button>}
+                    {isPostPending && <button disabled type="submit">Wait...</button>}
+                </div>
             </form>
         </div>
     );

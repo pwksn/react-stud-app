@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import CourseResources from "./CourseResources";
 
@@ -10,7 +11,7 @@ const CourseDetails = ({ courses, courseID }) => {
         fetch('http://localhost:8000/courses/' + currentCourse.id, {
             method: 'DELETE'
         }).then(() => {
-            history.push('/courses');
+            history.push('/');
         })
     }
 

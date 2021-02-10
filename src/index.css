@@ -90,6 +90,14 @@ a {
   display: flex;
 }
 
+.btn-cancel {
+  background-color: #dc143c !important;
+}
+
+.btn-cancel:hover {
+  background-color: #e34363 !important;
+}
+
 /* Sidebar */
 
 .sidebar {
@@ -367,6 +375,7 @@ a {
   display: flex;
   flex-direction: column;
   padding: 1.5rem .5rem;
+  grid-column: 1/3;
 }
 
 .course-form h1 {
@@ -413,7 +422,7 @@ a {
 .course-form button {
   width: 5rem;
   height: 2rem;
-  margin-top: 2rem;
+  margin: 2rem .5rem 0 .5rem;
   color: #fff;
   background-color: #222C67;
   border-radius: 1rem;
