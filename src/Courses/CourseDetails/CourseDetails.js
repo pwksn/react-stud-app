@@ -44,7 +44,7 @@ const CourseDetails = ({ courses, courseID }) => {
                 </div>
             </div>
 
-            {currentCourse.upelLink && <div className="course-details-resources">
+            {(currentCourse.upelLink || currentCourse.eLectureLink || currentCourse.driveLink) && <div className="course-details-resources">
                 <CourseResources currentCourse={currentCourse}/>
             </div>}
 

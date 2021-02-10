@@ -31,6 +31,9 @@ const CourseForm = ({ onCoursesPostSend }) => {
             lab: labDate,
             location: courseLocation,
             lecturer: courseLecturer,
+            upelLink: upelLink,
+            eLectureLink: eLectureLink,
+            driveLink: driveLink
         };
 
         setIsPostPending(true);
