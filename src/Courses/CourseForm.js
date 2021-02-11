@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useHistory, useParams } from "react-router-dom";
 
-const CourseForm = ({ onCoursesPostSend }) => {
+const CourseForm = ({ currentFormCourse }) => {
 
     const [courseName, setCourseName] = useState('');
     const [courseSem, setCourseSem] = useState('');
@@ -16,9 +16,30 @@ const CourseForm = ({ onCoursesPostSend }) => {
 
     const [isPostPending, setIsPostPending] = useState(false);
     const history = useHistory();
+    const { id } = useParams();
 
-    const onFormCancel = () => {
+    const onFormCancel = (e) => {
+        e.preventDefault(); // without this line: Warning: Form submission canceled because the form is not connected
         history.push('/courses/home');
+    }
+
+    useEffect(() => {
+        if (id) {
+            setEditedCourseData();
+        }
+    }, [id]);
+
+    const setEditedCourseData = () => {
+        setCourseName(currentFormCourse.name);
+        setCourseSem(currentFormCourse.sem);
+        setLectureDate(currentFormCourse.lecture);
+        setLabDate(currentFormCourse.lab);
+        setCourseLocation(currentFormCourse.location);
+        setCourseLecturer(currentFormCourse.lecturer);
+        setCourseColor(currentFormCourse.color);
+        setUpelLink(currentFormCourse.upelLink);
+        setELectureLink(currentFormCourse.eLectureLink);
+        setDriveLink(currentFormCourse.driveLink);
     }
 
     const handleSubmit = (e) => {
@@ -38,15 +59,29 @@ const CourseForm = ({ onCoursesPostSend }) => {
 
         setIsPostPending(true);
 
-        fetch('http://localhost:8000/courses', {
-            method: 'POST',
-            headers: { "Content-Type": "application/json"},
-            body: JSON.stringify(newCourse)
-        }).then(() => {
-            setIsPostPending(false);
-            //onCoursesPostSend();
-            history.push('/courses/home');
-        })
+        if (id) {
+            fetch('http://localhost:8000/courses/' + id, {
+                    method: 'DELETE'
+                }).then(() => {
+                    fetch('http://localhost:8000/courses', {
+                        method: 'POST',
+                        headers: { "Content-Type": "application/json"},
+                        body: JSON.stringify(newCourse)
+                    }).then(() => {
+                        setIsPostPending(false);
+                        history.push('/courses/home');
+                    })
+                })
+        } else {
+            fetch('http://localhost:8000/courses', {
+                method: 'POST',
+                headers: { "Content-Type": "application/json"},
+                body: JSON.stringify(newCourse)
+            }).then(() => {
+                setIsPostPending(false);
+                history.push('/courses/home');
+            })
+        }
     }
 
     return (

@@ -12,10 +12,6 @@ const CoursesList = ({ courses, setCourseSelection }) => {
         setCourseSelection(e);
     }
 
-    const onCourseChange = () => {
-        console.log(courses);
-    }
-
     const setActiveSemesterCourses = () => {
         if (activeSemester === 'sem-all') {
             setActiveCourses(courses);
@@ -26,7 +22,6 @@ const CoursesList = ({ courses, setCourseSelection }) => {
     }
 
     useEffect(setActiveSemesterCourses, [activeSemester]);
-    useEffect(onCourseChange, [courses]);
 
     return (
         <div className="courses-list">

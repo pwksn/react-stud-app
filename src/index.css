@@ -256,22 +256,19 @@ a {
   //justify-content: space-between;
 }
 
-.course-details-resources-tiles div{
-  margin: 0 .5rem;
-}
-
 .course-details-resources-tile {
   width: 15rem;
   height: 6rem;
   border-radius: 1rem;
   padding: .5rem;
+  margin: 0 .5rem;
 
   display: grid;
   grid-template-columns: 4rem 1fr;
   align-items: center;
 }
 
-.course-details-resources-tile-logo, .course-delete-logo {
+.course-details-resources-tile-logo, .course-delete-logo, .course-edit-logo {
   width: 5rem;
   height: 5rem;
   border-radius: 1rem;
@@ -329,16 +326,22 @@ a {
   background-color: #7e9af6;
 }
 
-.course-delete {
-  background-color: #dc143c;
+.course-changes {
   grid-row: 9/11;
   grid-column: 2/3;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.course-delete {
+  background-color: #dc143c;
   height: 6rem;
   width: 6rem;
-  justify-self: end;
-  align-self: end;
   border-radius: 1rem;
   padding: .5rem;
+  margin-left: 1rem;
   cursor: pointer;
 }
 
@@ -348,6 +351,24 @@ a {
 
 .course-delete-logo {
   background-color: #e34363;
+}
+
+.course-edit {
+  background-color: #8d9f9f;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 1rem;
+  padding: .5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.course-edit:hover {
+  background-color: #a4b2b2;
+}
+
+.course-edit-logo {
+  background-color: #a4b2b2;
 }
 
 /* Courses List */

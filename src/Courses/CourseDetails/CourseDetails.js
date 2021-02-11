@@ -1,11 +1,16 @@
 import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import CourseResources from "./CourseResources";
 
-const CourseDetails = ({ courses, courseID }) => {
+const CourseDetails = ({ courses, courseID, parentCallback }) => {
 
     const currentCourse = courses.filter(course => course.id === courseID)[0];
     const history = useHistory();
+
+    const sendCurrentCourse = () => {
+        parentCallback(currentCourse);
+    }
 
     const handleCourseDelete = () => {
         fetch('http://localhost:8000/courses/' + currentCourse.id, {
@@ -48,9 +53,20 @@ const CourseDetails = ({ courses, courseID }) => {
                 <CourseResources currentCourse={currentCourse}/>
             </div>}
 
-            <div className="course-delete" onClick={handleCourseDelete}>
-                <div className="course-delete-logo">
-                    <ion-icon name="trash-outline" style={{color: "#eee", width: '2rem', height: '2rem'}}></ion-icon>
+            <div className="course-changes">
+
+                <div className="course-edit" onClick={sendCurrentCourse}>
+                    <Link to={`/courses/form/${courseID}`}>
+                        <div className="course-edit-logo">
+                            <ion-icon name="settings-outline" style={{color: "#eee", width: '2rem', height: '2rem'}}></ion-icon>
+                        </div>
+                    </Link>
+                </div>
+
+                <div className="course-delete" onClick={handleCourseDelete}>
+                    <div className="course-delete-logo">
+                        <ion-icon name="trash-outline" style={{color: "#eee", width: '2rem', height: '2rem'}}></ion-icon>
+                    </div>
                 </div>
             </div>
         </div>
