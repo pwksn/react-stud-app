@@ -31,7 +31,7 @@ const CourseForm = ({ currentFormCourse }) => {
 
     const setEditedCourseData = () => {
         setCourseName(currentFormCourse.name);
-        setCourseSem(currentFormCourse.sem);
+        setCourseSem(+currentFormCourse.sem);
         setLectureDate(currentFormCourse.lecture);
         setLabDate(currentFormCourse.lab);
         setCourseLocation(currentFormCourse.location);
@@ -46,7 +46,7 @@ const CourseForm = ({ currentFormCourse }) => {
         e.preventDefault();
         const newCourse = {
             name: courseName,
-            sem: 'sem-' + courseSem,
+            sem: +courseSem,
             color: courseColor,
             lecture: lectureDate,
             lab: labDate,

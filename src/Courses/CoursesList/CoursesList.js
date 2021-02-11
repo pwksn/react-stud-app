@@ -5,7 +5,7 @@ import SemesterPicker from "./SemesterPicker";
 
 const CoursesList = ({ courses, setCourseSelection }) => {
 
-    const [activeSemester, setActiveSemester] = useState('sem-1');
+    const [activeSemester, setActiveSemester] = useState(1);
     const [activeCourses, setActiveCourses] = useState(courses);
 
     const onCourseSelection = (e) => {
@@ -13,7 +13,7 @@ const CoursesList = ({ courses, setCourseSelection }) => {
     }
 
     const setActiveSemesterCourses = () => {
-        if (activeSemester === 'sem-all') {
+        if (activeSemester === 0) {
             setActiveCourses(courses);
         } else {
             const activeSemesterCourses = courses.filter(course => course.sem === activeSemester);
