@@ -20,10 +20,8 @@ const CoursesHome = ({ setCurrentCourse }) => {
 
     return (
         <div className="courses">
-            {/* {courses && <Route exact path="/courses" render={(props) => <CoursesList {...props} courses={courses} setCourseSelection={e => setCourseSelected(e)}/>}/>} */}
             {courses && <CoursesList courses={courses} setCourseSelection={e => setCourseSelected(e)}/>}
             {courseSelected && courses && <CourseDetails courses={courses} courseID={courseSelected} parentCallback={callbackFunction}/>}
-            {/* {courseSelected && courses && <Route exact path="/courses" render={(props) => <CourseDetails {...props} courses={courses} courseID={courseSelected}/>}/>} */}
             {error && <h1 className="loading-placeholder">{error} :(</h1>}
             {isPending && <h1 className="loading-placeholder">Loading...</h1>}
         </div>
