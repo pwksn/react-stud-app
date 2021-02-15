@@ -14,7 +14,7 @@ function App() {
               <Home />
             </Route>
             <Route path="/courses">
-              <Courses />
+              <Courses className="app-courses"/>
             </Route>
           </Switch>
         </div>

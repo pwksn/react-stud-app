@@ -11,7 +11,81 @@
       "lecturer": "Wiesław Ludwin",
       "upelLink": "https://upel2.cel.agh.edu.pl/wiet/",
       "eLectureLink": "https://www.microsoft.com/pl-pl/microsoft-teams/group-chat-software",
-      "driveLink": "https://drive.google.com/drive/u/0/my-drive"
+      "driveLink": "https://drive.google.com/drive/u/0/my-drive",
+      "assignments": [
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "Test",
+          "assignmentId": 1613325169
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "Exam",
+          "assignmentId": 1613325193
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "Task",
+          "assignmentId": 1613325198
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "Task",
+          "assignmentId": 1613325198
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "Task",
+          "assignmentId": 1613325198
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "Task",
+          "assignmentId": 1613325198
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "Task",
+          "assignmentId": 1613325198
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "Task",
+          "assignmentId": 1613325198
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "Task",
+          "assignmentId": 1613325198
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "Task",
+          "assignmentId": 1613325198
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "Task",
+          "assignmentId": 1613325198
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "Task",
+          "assignmentId": 1613325198
+        }
+      ]
     },
     {
       "name": "BSK",

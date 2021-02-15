@@ -86,7 +86,8 @@ const CourseForm = ({ currentFormCourse }) => {
 
     return (
         <div className="course-form">
-            <h1>New Course</h1>
+            {!id && <h1>New Course</h1>}
+            {id && <h1>{courseName} - edit course</h1>}
             <form onSubmit={handleSubmit}>
                 <div className="d-flex">
                     <div>

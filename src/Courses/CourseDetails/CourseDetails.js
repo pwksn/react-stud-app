@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom';
+import CourseAssignments from "./CourseAssignments";
 import CourseResources from "./CourseResources";
 
 const CourseDetails = ({ courses, courseID, parentCallback }) => {
@@ -53,8 +54,11 @@ const CourseDetails = ({ courses, courseID, parentCallback }) => {
                 <CourseResources currentCourse={currentCourse}/>
             </div>}
 
-            <div className="course-changes">
+            {currentCourse.assignments && <div className="course-assignments">
+                <CourseAssignments currentCourse={currentCourse}/>
+            </div>}
 
+            <div className="course-changes">
                 <div className="course-edit" onClick={sendCurrentCourse}>
                     <Link to={`/courses/form/${courseID}`}>
                         <div className="course-edit-logo">
