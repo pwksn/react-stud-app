@@ -36,7 +36,12 @@ const CourseAssignments = ({ currentCourse, onCourseAssignmentsChange }) => {
     return (
         <div className="course-assignments-box">
             <div className="course-assignments-header d-flex">
-                <h2 className="header-1">Assignments</h2>
+                <div className="d-flex">
+                    <h2 className="header-1">Assignments</h2>
+                    {!assignmentFormMode && currentCourse.assignments && currentCourse.assignments.length > 0 && <div className="course-assignment-counter d-flex">
+                        <p>{currentCourse.assignments.length}</p>
+                    </div>}
+                </div>
                 <button onClick={onAssignmentModeToggle}>
                     {assignmentFormMode && <ion-icon name="close" style={{color: '#fff'}}></ion-icon>}
                     {!assignmentFormMode && <ion-icon name="add-outline" style={{color: '#fff'}}></ion-icon>}

@@ -1,6 +1,7 @@
 import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import CourseAssignments from "./CourseAssignments/CourseAssignments";
+import CourseProgress from "./CourseProgress/CourseProgress";
 import CourseResources from "./CourseResources";
 
 const CourseDetails = ({ courses, courseID, parentCallback, onCourseAssignmentsChange }) => {
@@ -47,6 +48,10 @@ const CourseDetails = ({ courses, courseID, parentCallback, onCourseAssignmentsC
                             <p>{ currentCourse.lecturer }</p>
                         </div>}
                 </div>
+            </div>
+
+            <div className="course-progress">
+                <CourseProgress />
             </div>
 
             {(currentCourse.upelLink || currentCourse.eLectureLink || currentCourse.driveLink) && <div className="course-details-resources">

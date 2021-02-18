@@ -329,6 +329,24 @@ a {
   background-color: #7e9af6;
 }
 
+/* Course Progress  */
+
+.course-progress {
+  grid-row: 4/7;
+  grid-column: 1/2;
+  height: 50vh;
+
+  background-color: #F2F2F2;
+  border-radius: 1rem;
+  padding: .5rem 1rem 0 1rem;
+}
+
+.course-progress-box {
+  height: 100%;
+}
+
+/* Course Assignments */
+
 .course-assignments {
   grid-row: 4/7;
   grid-column: 2/3;
@@ -353,6 +371,29 @@ a {
 
 .course-assignments-header {
   justify-content: space-between;
+}
+
+.course-assignments-header div {
+  align-items: center;
+}
+
+.course-assignment-counter {
+  margin-left: 1rem;
+  background-color: #2DC76D;
+  border-radius: 1rem;
+
+  width: 1.5rem;
+  height: 1.5rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.course-assignment-counter p {
+  font-size: .8rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1rem;
 }
 
 .course-assignments-header button{
