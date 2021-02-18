@@ -1,6 +1,6 @@
 import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom';
-import CourseAssignments from "./CourseAssignments";
+import CourseAssignments from "./CourseAssignments/CourseAssignments";
 import CourseResources from "./CourseResources";
 
 const CourseDetails = ({ courses, courseID, parentCallback, onCourseAssignmentsChange }) => {

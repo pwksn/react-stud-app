@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CourseAssignmentsForm from "./CourseAssignments/CourseAssignmentsForm";
+import CourseAssignmentsForm from "./CourseAssignmentsForm";
 
 const CourseAssignments = ({ currentCourse, onCourseAssignmentsChange }) => {
 
@@ -37,9 +37,9 @@ const CourseAssignments = ({ currentCourse, onCourseAssignmentsChange }) => {
         <div className="course-assignments-box">
             <div className="course-assignments-header d-flex">
                 <h2 className="header-1">Assignments</h2>
-                <button>
-                    {assignmentFormMode && <ion-icon name="close" style={{color: '#fff'}} onClick={onAssignmentModeToggle}></ion-icon>}
-                    {!assignmentFormMode && <ion-icon name="add-outline" style={{color: '#fff'}} onClick={onAssignmentModeToggle}></ion-icon>}
+                <button onClick={onAssignmentModeToggle}>
+                    {assignmentFormMode && <ion-icon name="close" style={{color: '#fff'}}></ion-icon>}
+                    {!assignmentFormMode && <ion-icon name="add-outline" style={{color: '#fff'}}></ion-icon>}
                 </button>
             </div>
             {!assignmentFormMode && currentCourse.assignments && currentCourse.assignments.length > 0 && <div className="course-assignments-list">
@@ -58,9 +58,11 @@ const CourseAssignments = ({ currentCourse, onCourseAssignmentsChange }) => {
                     </div>
                 ))}
             </div>}
+
             {((!assignmentFormMode && !currentCourse.assignments) || (!assignmentFormMode && currentCourse.assignments.length === 0)) && <div className="course-assignment-placeholder-box">
                 <h2 className="course-assignment-placeholder">No assignments</h2>
             </div>}
+            
             {assignmentFormMode && <CourseAssignmentsForm onAssignmentAdd={onAssignmentAdd}/>}
         </div>
     );
