@@ -1,10 +1,9 @@
-import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import CourseAssignments from "./CourseAssignments";
 import CourseResources from "./CourseResources";
 
-const CourseDetails = ({ courses, courseID, parentCallback }) => {
+const CourseDetails = ({ courses, courseID, parentCallback, onCourseAssignmentsChange }) => {
 
     const currentCourse = courses.filter(course => course.id === courseID)[0];
     const history = useHistory();
@@ -54,9 +53,9 @@ const CourseDetails = ({ courses, courseID, parentCallback }) => {
                 <CourseResources currentCourse={currentCourse}/>
             </div>}
 
-            {currentCourse.assignments && <div className="course-assignments">
-                <CourseAssignments currentCourse={currentCourse}/>
-            </div>}
+            <div className="course-assignments">
+                <CourseAssignments currentCourse={currentCourse} onCourseAssignmentsChange={onCourseAssignmentsChange}/>
+            </div>
 
             <div className="course-changes">
                 <div className="course-edit" onClick={sendCurrentCourse}>

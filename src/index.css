@@ -351,6 +351,71 @@ a {
   flex-direction: column;
 }
 
+.course-assignments-header {
+  justify-content: space-between;
+}
+
+.course-assignments-header button{
+  background-color: #222C67;
+  border-radius: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.course-assignment-placeholder-box {
+  margin-top: 2rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.course-assignment-placeholder {
+  font-weight: 400;
+}
+
+.course-assignment-form form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  font-weight: 600;
+}
+
+.course-assignment-form div {
+  margin-top: 1rem;
+  display: flex;
+  padding: 0 1rem;
+}
+
+.course-assignment-form label {
+  margin-right: 1rem;
+}
+
+.course-assignment-form input, .course-assignment-form select {
+  /* width: 15rem;
+  max-width: 15rem; */
+  line-height: 1.5rem;
+  height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid;
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 0 .5rem;
+  flex-grow: 1;
+}
+
+.course-assignment-form button {
+  width: 5rem;
+  height: 2rem;
+  color: #fff;
+  background-color: #222C67;
+  border-radius: 1rem;
+
+  align-self: center;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
 .course-changes {
   grid-row: 9/11;
   grid-column: 2/3;
@@ -522,6 +587,13 @@ a {
 
 .course-assignment-type-task {
   background-color: #2ec76d;
+}
+
+.course-assignment-delete {
+  background-color: #dc143c;
+  border-radius: 1rem;
+  padding: 0;
+  margin-left: .5rem;
 }
 
 /* Semester Picker */

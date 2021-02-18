@@ -1,6 +1,19 @@
 {
   "courses": [
     {
+      "name": "Języki skryptowe",
+      "sem": 3,
+      "color": "pink",
+      "lecture": "pt. 11:30",
+      "lab": "pn. 9:30",
+      "location": "D6, 2",
+      "lecturer": "Andrzej Matiolański",
+      "upelLink": "https://upel2.cel.agh.edu.pl/wiet/",
+      "eLectureLink": "https://www.microsoft.com/pl-pl/microsoft-teams/group-chat-software",
+      "driveLink": "https://drive.google.com/drive/u/0/my-drive",
+      "id": 3
+    },
+    {
       "name": "Media transmisyjne",
       "sem": 1,
       "id": 1,
@@ -16,74 +29,68 @@
         {
           "assignmentName": "Kolos zaliczeniowy",
           "assignmentDate": "2021-02-22",
-          "assignmentType": "Test",
+          "assignmentType": "test",
           "assignmentId": 1613325169
         },
         {
           "assignmentName": "Kolos zaliczeniowy",
           "assignmentDate": "2021-02-22",
-          "assignmentType": "Exam",
+          "assignmentType": "exam",
+          "assignmentId": 1613325183
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "task",
+          "assignmentId": 1613325199
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "task",
+          "assignmentId": 1613325197
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "task",
+          "assignmentId": 1613325196
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "task",
+          "assignmentId": 1613325195
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "task",
+          "assignmentId": 1613325194
+        },
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentDate": "2021-02-22",
+          "assignmentType": "task",
           "assignmentId": 1613325193
         },
         {
           "assignmentName": "Kolos zaliczeniowy",
           "assignmentDate": "2021-02-22",
-          "assignmentType": "Task",
-          "assignmentId": 1613325198
+          "assignmentType": "task",
+          "assignmentId": 1613325192
         },
         {
           "assignmentName": "Kolos zaliczeniowy",
           "assignmentDate": "2021-02-22",
-          "assignmentType": "Task",
-          "assignmentId": 1613325198
+          "assignmentType": "task",
+          "assignmentId": 1613325191
         },
         {
           "assignmentName": "Kolos zaliczeniowy",
           "assignmentDate": "2021-02-22",
-          "assignmentType": "Task",
-          "assignmentId": 1613325198
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
-          "assignmentType": "Task",
-          "assignmentId": 1613325198
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
-          "assignmentType": "Task",
-          "assignmentId": 1613325198
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
-          "assignmentType": "Task",
-          "assignmentId": 1613325198
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
-          "assignmentType": "Task",
-          "assignmentId": 1613325198
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
-          "assignmentType": "Task",
-          "assignmentId": 1613325198
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
-          "assignmentType": "Task",
-          "assignmentId": 1613325198
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
-          "assignmentType": "Task",
-          "assignmentId": 1613325198
+          "assignmentType": "task",
+          "assignmentId": 1613325190
         }
       ]
     },
@@ -98,20 +105,15 @@
       "lecturer": "Marek Natkaniec",
       "upelLink": "https://yoksel.github.io/flex-cheatsheet/#section-justify-content",
       "eLectureLink": "https://www.microsoft.com/pl-pl/microsoft-teams/group-chat-software",
-      "driveLink": "https://drive.google.com/drive/u/0/my-drive"
-    },
-    {
-      "name": "Języki skryptowe",
-      "sem": 3,
-      "color": "pink",
-      "lecture": "pt. 11:30",
-      "lab": "pn. 9:30",
-      "location": "D6, 2",
-      "lecturer": "Andrzej Matiolański",
-      "upelLink": "https://upel2.cel.agh.edu.pl/wiet/",
-      "eLectureLink": "https://www.microsoft.com/pl-pl/microsoft-teams/group-chat-software",
       "driveLink": "https://drive.google.com/drive/u/0/my-drive",
-      "id": 3
+      "assignments": [
+        {
+          "assignmentName": "Termin 1",
+          "assignmentType": "exam",
+          "assignmentDate": "2021-06-03",
+          "assignmentId": 1613635520082
+        }
+      ]
     }
   ]
 }
