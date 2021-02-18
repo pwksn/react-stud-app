@@ -18,7 +18,6 @@ const CourseAssignments = ({ currentCourse, onCourseAssignmentsChange }) => {
 
     const onAssignmentModeToggle = () => {
         setAssignmentFormMode(!assignmentFormMode);
-
     }
 
     const getClassName = (assignmentType) => {

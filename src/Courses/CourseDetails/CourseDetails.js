@@ -51,7 +51,7 @@ const CourseDetails = ({ courses, courseID, parentCallback, onCourseAssignmentsC
             </div>
 
             <div className="course-progress">
-                <CourseProgress />
+                <CourseProgress currentCourse={currentCourse} onCourseAssignmentsChange={onCourseAssignmentsChange}/>
             </div>
 
             {(currentCourse.upelLink || currentCourse.eLectureLink || currentCourse.driveLink) && <div className="course-details-resources">

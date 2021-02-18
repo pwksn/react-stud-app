@@ -11,6 +11,8 @@
       "upelLink": "https://upel2.cel.agh.edu.pl/wiet/",
       "eLectureLink": "https://www.microsoft.com/pl-pl/microsoft-teams/group-chat-software",
       "driveLink": "https://drive.google.com/drive/u/0/my-drive",
+      "pointsEarned": 87,
+      "pointsPossible": 100,
       "id": 3
     },
     {
@@ -25,6 +27,8 @@
       "upelLink": "https://upel2.cel.agh.edu.pl/wiet/",
       "eLectureLink": "https://www.microsoft.com/pl-pl/microsoft-teams/group-chat-software",
       "driveLink": "https://drive.google.com/drive/u/0/my-drive",
+      "pointsEarned": 15,
+      "pointsPossible": 30,
       "assignments": [
         {
           "assignmentName": "Kolos zaliczeniowy",
@@ -106,6 +110,8 @@
       "upelLink": "https://yoksel.github.io/flex-cheatsheet/#section-justify-content",
       "eLectureLink": "https://www.microsoft.com/pl-pl/microsoft-teams/group-chat-software",
       "driveLink": "https://drive.google.com/drive/u/0/my-drive",
+      "pointsEarned": 40,
+      "pointsPossible": 44,
       "assignments": [
         {
           "assignmentName": "Termin 1",
