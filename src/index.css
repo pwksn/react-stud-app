@@ -431,6 +431,18 @@ a {
   -moz-appearance: textfield;
 }
 
+.course-progress-empty {
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-progress-empty h2 {
+  font-weight: 400;
+}
+
 /* To remove arrows from input type number */
 .course-progress-form input::-webkit-inner-spin-button,
 .course-progress-form input::-webkit-outer-spin-button {
@@ -501,10 +513,10 @@ a {
 }
 
 .course-assignment-placeholder-box {
-  margin-top: 2rem;
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .course-assignment-placeholder {

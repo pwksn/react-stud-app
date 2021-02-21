@@ -1,6 +1,29 @@
 {
   "courses": [
     {
+      "name": "BSK",
+      "sem": 1,
+      "id": 2,
+      "color": "#222C67",
+      "lecture": "pn. 8:00",
+      "lab": "czw. 13:00",
+      "location": "B9, 102",
+      "lecturer": "Marek Natkaniec",
+      "upelLink": "https://yoksel.github.io/flex-cheatsheet/#section-justify-content",
+      "eLectureLink": "https://www.microsoft.com/pl-pl/microsoft-teams/group-chat-software",
+      "driveLink": "https://drive.google.com/drive/u/0/my-drive",
+      "pointsEarned": 40,
+      "pointsPossible": 44,
+      "assignments": [
+        {
+          "assignmentName": "Termin 1",
+          "assignmentType": "exam",
+          "assignmentDate": "2021-06-03",
+          "assignmentId": 1613635520082
+        }
+      ]
+    },
+    {
       "name": "Języki skryptowe",
       "sem": 3,
       "color": "pink",
@@ -14,6 +37,19 @@
       "pointsEarned": 87,
       "pointsPossible": 100,
       "id": 3
+    },
+    {
+      "name": "Test123",
+      "sem": 2,
+      "color": "#6b0000",
+      "lecture": "wt",
+      "lab": "pt",
+      "location": "",
+      "lecturer": "",
+      "upelLink": "",
+      "eLectureLink": "",
+      "driveLink": "",
+      "id": 4
     },
     {
       "name": "Media transmisyjne",
@@ -95,29 +131,6 @@
           "assignmentDate": "2021-02-22",
           "assignmentType": "task",
           "assignmentId": 1613325190
-        }
-      ]
-    },
-    {
-      "name": "BSK",
-      "sem": 1,
-      "id": 2,
-      "color": "#222C67",
-      "lecture": "pn. 8:00",
-      "lab": "czw. 13:00",
-      "location": "B9, 102",
-      "lecturer": "Marek Natkaniec",
-      "upelLink": "https://yoksel.github.io/flex-cheatsheet/#section-justify-content",
-      "eLectureLink": "https://www.microsoft.com/pl-pl/microsoft-teams/group-chat-software",
-      "driveLink": "https://drive.google.com/drive/u/0/my-drive",
-      "pointsEarned": 40,
-      "pointsPossible": 44,
-      "assignments": [
-        {
-          "assignmentName": "Termin 1",
-          "assignmentType": "exam",
-          "assignmentDate": "2021-06-03",
-          "assignmentId": 1613635520082
         }
       ]
     }

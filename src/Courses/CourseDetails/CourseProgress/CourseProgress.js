@@ -59,7 +59,7 @@ const CourseProgress = ({ currentCourse, onCourseAssignmentsChange }) => {
                     {!progressFormMode && <ion-icon name="pencil-outline" style={{color: '#fff'}}></ion-icon>}
                 </button>
             </div>
-            {!progressFormMode && <div className="course-progress-info">
+            {!progressFormMode && currentCourse.pointsPossible && <div className="course-progress-info">
                 <div className="course-progress-bar">
                     <CircleProgress 
                         percentage={pointsPercentage}
@@ -81,6 +81,9 @@ const CourseProgress = ({ currentCourse, onCourseAssignmentsChange }) => {
                         <p>Projected grade</p>
                     </div>
                 </div>
+            </div>}
+            {!progressFormMode && !currentCourse.pointsPossible && <div className="course-progress-empty">
+                <h2>No progress yet</h2>
             </div>}
             {/* {progressFormMode && <div className="course-progress-form-box">
                 <form className="course-progress-form" onSubmit={handleSubmit}>
