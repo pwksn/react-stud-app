@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './Home';
+import Home from './Home/Home';
 import Sidebar from "./Sidebar";
 import Courses from './Courses/Courses';
 

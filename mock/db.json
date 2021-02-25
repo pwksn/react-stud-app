@@ -24,34 +24,6 @@
       ]
     },
     {
-      "name": "Języki skryptowe",
-      "sem": 3,
-      "color": "pink",
-      "lecture": "pt. 11:30",
-      "lab": "pn. 9:30",
-      "location": "D6, 2",
-      "lecturer": "Andrzej Matiolański",
-      "upelLink": "https://upel2.cel.agh.edu.pl/wiet/",
-      "eLectureLink": "https://www.microsoft.com/pl-pl/microsoft-teams/group-chat-software",
-      "driveLink": "https://drive.google.com/drive/u/0/my-drive",
-      "pointsEarned": 87,
-      "pointsPossible": 100,
-      "id": 3
-    },
-    {
-      "name": "Test123",
-      "sem": 2,
-      "color": "#6b0000",
-      "lecture": "wt",
-      "lab": "pt",
-      "location": "",
-      "lecturer": "",
-      "upelLink": "",
-      "eLectureLink": "",
-      "driveLink": "",
-      "id": 4
-    },
-    {
       "name": "Media transmisyjne",
       "sem": 1,
       "id": 1,
@@ -86,53 +58,103 @@
         },
         {
           "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
+          "assignmentDate": "2021-02-21",
           "assignmentType": "task",
           "assignmentId": 1613325197
         },
         {
           "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
+          "assignmentDate": "2021-02-20",
           "assignmentType": "task",
           "assignmentId": 1613325196
         },
         {
           "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
+          "assignmentDate": "2021-02-18",
           "assignmentType": "task",
           "assignmentId": 1613325195
         },
         {
           "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
+          "assignmentDate": "2021-03-01",
           "assignmentType": "task",
           "assignmentId": 1613325194
         },
         {
           "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
+          "assignmentDate": "2021-03-03",
           "assignmentType": "task",
           "assignmentId": 1613325193
         },
         {
           "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
+          "assignmentDate": "2021-04-01",
           "assignmentType": "task",
           "assignmentId": 1613325192
         },
         {
           "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
+          "assignmentDate": "2021-04-12",
           "assignmentType": "task",
           "assignmentId": 1613325191
         },
         {
           "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
+          "assignmentDate": "2021-01-22",
           "assignmentType": "task",
           "assignmentId": 1613325190
         }
       ]
+    },
+    {
+      "name": "Języki skryptowe",
+      "sem": 3,
+      "color": "pink",
+      "lecture": "pt. 11:30",
+      "lab": "pn. 9:30",
+      "location": "D6, 2",
+      "lecturer": "Andrzej Matiolański",
+      "upelLink": "https://upel2.cel.agh.edu.pl/wiet/",
+      "eLectureLink": "https://www.microsoft.com/pl-pl/microsoft-teams/group-chat-software",
+      "driveLink": "https://drive.google.com/drive/u/0/my-drive",
+      "pointsEarned": 87,
+      "pointsPossible": 100,
+      "id": 3,
+      "assignments": [
+        {
+          "assignmentName": "Task 1",
+          "assignmentType": "task",
+          "assignmentDate": "2021-03-05",
+          "assignmentId": 1614201755109
+        },
+        {
+          "assignmentName": "Exam T1",
+          "assignmentType": "exam",
+          "assignmentDate": "2021-05-28",
+          "assignmentId": 1614201772557
+        },
+        {
+          "assignmentName": "Test 1",
+          "assignmentType": "test",
+          "assignmentDate": "2021-04-15",
+          "assignmentId": 1614201784805
+        }
+      ]
+    },
+    {
+      "name": "Test123",
+      "sem": 2,
+      "color": "#6b0000",
+      "lecture": "wt",
+      "lab": "pt",
+      "location": "",
+      "lecturer": "",
+      "upelLink": "",
+      "eLectureLink": "",
+      "driveLink": "",
+      "id": 4,
+      "pointsEarned": 0,
+      "pointsPossible": 0
     }
   ]
 }

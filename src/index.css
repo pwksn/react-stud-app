@@ -512,6 +512,10 @@ a {
   height: 2rem;
 }
 
+.course-assignments-header button {
+  margin-left: .5rem;
+}
+
 .course-assignment-placeholder-box {
   height: 100%;
   display: flex;

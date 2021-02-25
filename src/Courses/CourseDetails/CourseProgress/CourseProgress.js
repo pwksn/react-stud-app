@@ -59,7 +59,7 @@ const CourseProgress = ({ currentCourse, onCourseAssignmentsChange }) => {
                     {!progressFormMode && <ion-icon name="pencil-outline" style={{color: '#fff'}}></ion-icon>}
                 </button>
             </div>
-            {!progressFormMode && currentCourse.pointsPossible && <div className="course-progress-info">
+            {!progressFormMode && currentCourse.pointsPossible > 0 && <div className="course-progress-info">
                 <div className="course-progress-bar">
                     <CircleProgress 
                         percentage={pointsPercentage}
@@ -85,16 +85,6 @@ const CourseProgress = ({ currentCourse, onCourseAssignmentsChange }) => {
             {!progressFormMode && !currentCourse.pointsPossible && <div className="course-progress-empty">
                 <h2>No progress yet</h2>
             </div>}
-            {/* {progressFormMode && <div className="course-progress-form-box">
-                <form className="course-progress-form" onSubmit={handleSubmit}>
-                    <div className="d-flex">
-                        <input type="number" value={pointsEarned} onChange={(e) => setPointsEarned(e.target.value)} style={{direction: 'rtl'}}/>
-                        <p>/</p>
-                        <input type="number" value={pointsPossible} onChange={(e) => setPointsPossible(e.target.value)}/>
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>} */}
             {progressFormMode && 
             <CourseProgressForm 
                 pointsEarned={pointsEarned} 
