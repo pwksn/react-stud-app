@@ -1,7 +1,15 @@
 const Home = () => {
     return (
         <div className="home">
-            <h1>Homes</h1>
+            <div className="home-countdown">
+                HomeCountdown
+            </div>
+            <div className="home-calendar">
+                HomeCalendar
+            </div>
+            <div className="home-assignments">
+                HomeAssignments
+            </div>
         </div>
     );
 }

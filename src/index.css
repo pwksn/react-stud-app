@@ -153,10 +153,96 @@ a {
 /* Home */
 
 .home {
+  /* background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem; */
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 1rem;
+}
+
+.home-countdown, .home-calendar, .home-assignments {
   background-color: #fff;
   border-radius: 1rem;
   padding: 1.5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.home-countdown {
+  grid-column: 1/3;
+  grid-row: 1/4;
+}
+
+.home-countdown-box {
+  width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.home-countdown-box h1 {
+  color: #F49C3F;
+  font-size: 4rem;
+}
+
+
+.home-countdown-box h2 {
+  font-size: 1.5rem;
+}
+
+.home-countdown-date {
+  text-align: center;
+}
+
+.home-countdown-semester, .home-countdown-semester-form {
+  text-align: center;
+}
+
+.home-countdown-semester-form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-countdown-semester-form-box button {
+  width: 5rem;
+  height: 2rem;
+  color: #fff;
+  background-color: #222C67;
+  border-radius: 1rem;
+
+  align-self: center;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.home-countdown-semester h1:hover {
+  text-align: center;
+  background-color: #F49C3F;
+  color: #fff;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+/* Home calendar  */
+
+.home-calendar {
+  grid-column: 1/3;
+  grid-row: 4/-1;
+}
+
+/* Home Assignments  */
+
+.home-assignments {
+  grid-column: 3/4;
+  grid-row: 1/-1;
 }
 
 /* Courses */
