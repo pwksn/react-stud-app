@@ -1,4 +1,7 @@
 {
+  "semester": {
+    "endDate": "2021-06-30"
+  },
   "courses": [
     {
       "name": "BSK",

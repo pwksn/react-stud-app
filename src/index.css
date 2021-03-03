@@ -192,7 +192,6 @@ a {
   font-size: 4rem;
 }
 
-
 .home-countdown-box h2 {
   font-size: 1.5rem;
 }
@@ -229,6 +228,29 @@ a {
   color: #fff;
   border-radius: 1rem;
   cursor: pointer;
+}
+
+.home-countdown-semester input {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  margin: 1rem 0;
+}
+
+.home-countdown-semester button {
+  width: 5rem;
+  height: 2rem;
+  color: #fff;
+  background-color: #F49C3F;
+  border-radius: 1rem;
+
+  align-self: center;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.home-countdown-semester button:hover {
+  background-color: #dc8c39;
 }
 
 /* Home calendar  */
