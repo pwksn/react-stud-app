@@ -38,12 +38,12 @@ code {
 
 .App {
   background-color: #F2F2F2;
-  padding: 1rem;
+  /* padding: 1rem; */
   /* margin: 1rem; */
   border-radius: 1rem;
 
   width: 100%;
-  height: 100%;
+  max-height: inherit;
 
   display: grid;
   grid-template-columns: min(250px, 25%) 1fr;
@@ -105,6 +105,7 @@ a {
 .sidebar {
   background-color: #222C67;
   border-radius: 1rem;
+  margin: 1rem 0rem 1rem 1rem;
 
   display: flex;
   flex-direction: column;
@@ -147,24 +148,23 @@ a {
 
 .content {
   border-radius: 1rem;
-  height: 100%;
+  height: calc(100vh - 2rem);
+  margin: 1rem 1rem 1rem 0rem;
 }
 
 /* Home */
 
 .home {
-  /* background-color: #fff;
-  border-radius: 1rem;
-  padding: 1.5rem; */
-  height: 100%;
+  height: calc(100% - 1rem);
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  /* grid-template-rows: repeat(10, 1fr); */
+  grid-template-rows: 20% 80%;
   gap: 1rem;
 }
 
-.home-countdown, .home-calendar, .home-assignments {
+.home-countdown, .home-calendar, .home-assignments, .home-assignments-counter {
   background-color: #fff;
   border-radius: 1rem;
   padding: 1.5rem;
@@ -175,7 +175,7 @@ a {
 
 .home-countdown {
   grid-column: 1/3;
-  grid-row: 1/4;
+  grid-row: 1/2;
 }
 
 .home-countdown-box {
@@ -257,14 +257,47 @@ a {
 
 .home-calendar {
   grid-column: 1/3;
-  grid-row: 4/-1;
+  grid-row: 2/3;
 }
 
 /* Home Assignments  */
 
 .home-assignments {
   grid-column: 3/4;
-  grid-row: 1/-1;
+  grid-row: 1/3;
+}
+
+.home-assignments-box {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  gap: 1rem;
+}
+
+.home-assignments-list {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.home-assignment-tile {
+  margin: 1rem 0;
+  height: 8rem;
+  border-radius: 1rem;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.home-assignment-tile h4:first-of-type {
+  margin-right: auto;
+}
+
+.home-assignment-tile h3 {
+  font-size: 1.5rem;
 }
 
 /* Courses */
