@@ -1,44 +1,8 @@
 {
   "semester": {
-    "endDate": "2021-06-30"
+    "endDate": "2021-06-30T00:00:00.000Z"
   },
   "courses": [
-    {
-      "name": "Komunikacja i Myślenie Projektowe",
-      "color": "#e45cff",
-      "lecture": {
-        "lectureDay": "",
-        "lectureHour": ""
-      },
-      "lab": {
-        "labDay": "Mon",
-        "labHour": "13:00"
-      },
-      "location": "",
-      "lecturer": "",
-      "upelLink": "",
-      "eLectureLink": "",
-      "driveLink": "",
-      "id": 2
-    },
-    {
-      "name": "Jakość Obsługi w Sieciach",
-      "color": "#ff2424",
-      "lecture": {
-        "lectureDay": "Thu",
-        "lectureHour": "12:50"
-      },
-      "lab": {
-        "labDay": "",
-        "labHour": ""
-      },
-      "location": "",
-      "lecturer": "Katarzyna Kosek-Szott",
-      "upelLink": "",
-      "eLectureLink": "",
-      "driveLink": "",
-      "id": 4
-    },
     {
       "name": "Zarządzanie i Ekonomia Projektów",
       "color": "#38ff74",
@@ -58,40 +22,22 @@
       "id": 5
     },
     {
-      "name": "Ewolucja Sieci",
-      "color": "#b5b5b5",
+      "name": "Komunikacja i Myślenie Projektowe",
+      "color": "#e45cff",
       "lecture": {
-        "lectureDay": "Wed",
-        "lectureHour": "14:40"
+        "lectureDay": "",
+        "lectureHour": ""
       },
       "lab": {
-        "labDay": "",
-        "labHour": ""
+        "labDay": "Mon",
+        "labHour": "13:00"
       },
       "location": "",
-      "lecturer": "Paweł Kułakowski",
+      "lecturer": "Maciej Myśliwiec",
       "upelLink": "",
       "eLectureLink": "",
       "driveLink": "",
-      "id": 7
-    },
-    {
-      "name": "Matematyka w Analizie Sieci i Systemów",
-      "color": "#ff7b00",
-      "lecture": {
-        "lectureDay": "Wed",
-        "lectureHour": "16:15"
-      },
-      "lab": {
-        "labDay": "Thu",
-        "labHour": "16:15"
-      },
-      "location": "",
-      "lecturer": "Zdzisław Papir",
-      "upelLink": "",
-      "eLectureLink": "",
-      "driveLink": "",
-      "id": 8
+      "id": 12
     },
     {
       "name": "Metody Symulacyjne",
@@ -106,18 +52,74 @@
       },
       "location": "",
       "lecturer": "Szymon Szott",
-      "upelLink": "",
-      "eLectureLink": "",
+      "upelLink": "https://upel2.cel.agh.edu.pl/wiet/course/view.php?id=523",
+      "eLectureLink": "https://upel2.cel.agh.edu.pl/wiet/mod/clickmeeting/view.php?id=27662",
       "driveLink": "",
-      "id": 6,
       "assignments": [
         {
-          "assignmentName": "Quiz 1",
+          "assignmentName": "Quiz 2",
           "assignmentType": "task",
-          "assignmentDate": "2021-03-08",
-          "assignmentId": 1615128029490
+          "assignmentDate": "2021-03-15",
+          "assignmentId": 1615284668388
         }
-      ]
+      ],
+      "pointsEarned": 9,
+      "pointsPossible": 9,
+      "id": 13
+    },
+    {
+      "name": "Ewolucja Sieci",
+      "color": "#b5b5b5",
+      "lecture": {
+        "lectureDay": "Wed",
+        "lectureHour": "14:40"
+      },
+      "lab": {
+        "labDay": "",
+        "labHour": ""
+      },
+      "location": "",
+      "lecturer": "Paweł Kułakowski",
+      "upelLink": "",
+      "eLectureLink": "https://iet-agh.webex.com/meet/kulakowski",
+      "driveLink": "",
+      "id": 14
+    },
+    {
+      "name": "Mat. w Analizie Sieci i Systemów",
+      "color": "#ff7b00",
+      "lecture": {
+        "lectureDay": "Wed",
+        "lectureHour": "16:15"
+      },
+      "lab": {
+        "labDay": "Thu",
+        "labHour": "16:15"
+      },
+      "location": "",
+      "lecturer": "Zdzisław Papir",
+      "upelLink": "",
+      "eLectureLink": "https://iet-agh.webex.com/webappng/sites/iet-agh/meeting/download/4d4e041170064822af6e6ecdd3c50443?siteurl=iet-agh&MTID=m00fdbeeaf3ef3e6333f8f646dd26bd44",
+      "driveLink": "",
+      "id": 15
+    },
+    {
+      "name": "Jakość Obsługi w Sieciach",
+      "color": "#ff2424",
+      "lecture": {
+        "lectureDay": "Thu",
+        "lectureHour": "12:50"
+      },
+      "lab": {
+        "labDay": "",
+        "labHour": ""
+      },
+      "location": "",
+      "lecturer": "Katarzyna Kosek-Szott",
+      "upelLink": "https://upel2.cel.agh.edu.pl/wiet/course/view.php?id=688",
+      "eLectureLink": "",
+      "driveLink": "",
+      "id": 16
     },
     {
       "name": "Bezpieczeństwo Sieci Korporacyjnych",
@@ -132,10 +134,9 @@
       },
       "location": "",
       "lecturer": "Piotr Pacyna",
-      "upelLink": "",
-      "eLectureLink": "",
+      "upelLink": "https://upel2.cel.agh.edu.pl/wiet/course/view.php?id=713",
+      "eLectureLink": "https://upel2.cel.agh.edu.pl/wiet/course/view.php?id=713&section=2",
       "driveLink": "",
-      "id": 3,
       "assignments": [
         {
           "assignmentName": "Kolos zaliczeniowy",
@@ -143,7 +144,8 @@
           "assignmentDate": "2021-06-08",
           "assignmentId": 1615128076837
         }
-      ]
+      ],
+      "id": 17
     }
   ]
 }

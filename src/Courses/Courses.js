@@ -17,7 +17,6 @@ const Courses = () => {
     // }, [courses]);
 
     const setCurrentCourseCallback = (currentCourse) => {
-        console.log(currentCourse);
         setCurrentCourse(currentCourse);
     }
 

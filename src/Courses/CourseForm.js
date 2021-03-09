@@ -14,6 +14,10 @@ const CourseForm = ({ currentFormCourse }) => {
     const [upelLink, setUpelLink] = useState('');
     const [eLectureLink, setELectureLink] = useState('');
     const [driveLink, setDriveLink] = useState('');
+    const [assignments, setAssignments] = useState(null);
+    const [pointsEarned, setPointsEarned] = useState(0);
+    const [pointsPossible, setPointsPossible] = useState(0);
+
 
     const [isPostPending, setIsPostPending] = useState(false);
     const history = useHistory();
@@ -43,6 +47,9 @@ const CourseForm = ({ currentFormCourse }) => {
         setUpelLink(currentFormCourse.upelLink);
         setELectureLink(currentFormCourse.eLectureLink);
         setDriveLink(currentFormCourse.driveLink);
+        setAssignments(currentFormCourse.assignments);
+        setPointsEarned(currentFormCourse.pointsEarned);
+        setPointsPossible(currentFormCourse.pointsPossible);
     }
 
     const handleSubmit = (e) => {
@@ -62,7 +69,10 @@ const CourseForm = ({ currentFormCourse }) => {
             lecturer: courseLecturer,
             upelLink: upelLink,
             eLectureLink: eLectureLink,
-            driveLink: driveLink
+            driveLink: driveLink,
+            assignments: assignments,
+            pointsEarned: pointsEarned,
+            pointsPossible: pointsPossible
         };
 
         setIsPostPending(true);
@@ -111,12 +121,6 @@ const CourseForm = ({ currentFormCourse }) => {
                 <div className="d-flex">
                     <div>
                         <label>Lecture day:</label>
-                        {/* <input
-                            type="text"
-                            required
-                            value={lectureDay}
-                            onChange={(e) => setLectureDay(e.target.value)}
-                        /> */}
                         <select 
                         value={lectureDay} 
                         onChange={(e) => setLectureDay(e.target.value)}>
@@ -142,12 +146,6 @@ const CourseForm = ({ currentFormCourse }) => {
                 <div className="d-flex">
                     <div>
                         <label>Lab day:</label>
-                        {/* <input
-                            type="text"
-                            required
-                            value={labDay}
-                            onChange={(e) => setLabDay(e.target.value)}
-                        /> */}
                         <select 
                         value={labDay} 
                         onChange={(e) => setLabDay(e.target.value)}>

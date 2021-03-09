@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import HomeScheduleTile from "./HomeScheduleTile";
 
 const HomeSchedule = ({ courses }) => {
 
@@ -48,7 +49,7 @@ const HomeSchedule = ({ courses }) => {
                     <button className={`${activeWeekday === 4 ? "picker-button-active" : ""}`} value={4} onClick={() => setActiveWeekday(4)}>Thu</button>
                     <button className={`${activeWeekday === 5 ? "picker-button-active" : ""}`} value={5} onClick={() => setActiveWeekday(5)}>Fri</button>
                     <button className={`${activeWeekday === 6 ? "picker-button-active" : ""}`} value={6} onClick={() => setActiveWeekday(6)}>Sat</button>
-                    <button className={`${activeWeekday === 7 ? "picker-button-active" : ""}`} value={7} onClick={() => setActiveWeekday(7)}>Sun</button>
+                    <button className={`${activeWeekday === 0 ? "picker-button-active" : ""}`} value={0} onClick={() => setActiveWeekday(0)}>Sun</button>
                 </div>
 
                 <div className="home-schedule-day">
@@ -57,14 +58,7 @@ const HomeSchedule = ({ courses }) => {
                         {
                             courses && sortCoursesByDay()[0].map(course => (
                                 <div className="home-schedule-day-tile" key={course.lab.labDay + course.lab.labHour + course.lecture.lectureDay + course.lecture.lectureHour}>
-                                    <div className="home-schedule-day-tile-header">
-                                        <div style={{backgroundColor: course.color}}></div>
-                                        <h3>{course.name}</h3>
-                                    </div>
-                                    <div className="d-flex">
-                                        <h2>Lecture</h2>
-                                        <h2>{course.lecture.lectureHour}</h2>
-                                    </div>
+                                    <HomeScheduleTile course={course} type="lecture"/>
                                 </div>
                             ))
                         }
@@ -75,14 +69,7 @@ const HomeSchedule = ({ courses }) => {
                         {
                             courses && sortCoursesByDay()[1].map(course => (
                                 <div className="home-schedule-day-tile" key={course.lab.labDay + course.lab.labHour + course.lecture.lectureDay + course.lecture.lectureHour}>
-                                    <div className="home-schedule-day-tile-header">
-                                        <div style={{backgroundColor: course.color}}></div>
-                                        <h3>{course.name}</h3>
-                                    </div>
-                                    <div className="d-flex">
-                                        <h2>Lab</h2>            
-                                        <h2>{course.lab.labHour}</h2>
-                                    </div>
+                                    <HomeScheduleTile course={course} type="lab"/>
                                 </div>
                             ))
                         }

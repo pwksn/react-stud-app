@@ -14,17 +14,11 @@ const CoursesHome = ({ setCurrentCourse }) => {
         setCourseSelected(courses?.length ? courses[0].id : null);
     }, [courses]);
 
-    useEffect(() => {
-        console.log('useEffect!');
-    }, [requestData]);
-
     const callbackFunction = (courseDetailsData) => {
-        console.log(courseDetailsData);
         setCurrentCourse(courseDetailsData);
     }
 
     const onCourseAssignmentsChange = (data, method) => {
-        console.log(method);
         if (method === 'remove') {
             const currentCourse = courses.find(course => course.id === courseSelected);
             currentCourse.assignments?.splice(data, 1);

@@ -36,7 +36,6 @@ const CourseAssignments = ({ currentCourse, onCourseAssignmentsChange }) => {
             assignmentsSorted?.sort((a, b) => {
                 return new Date(a.assignmentDate).getTime() - new Date(b.assignmentDate).getTime();
             });
-            console.log(assignmentsSorted);
             return assignmentsSortOrderAsc ? assignmentsSorted : assignmentsSorted.reverse();
         }
     }
