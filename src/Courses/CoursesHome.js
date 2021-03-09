@@ -11,7 +11,7 @@ const CoursesHome = ({ setCurrentCourse }) => {
     const [requestData, setRequestData] = useState(new Date());
 
     useEffect(() => {
-        setCourseSelected(courses ? courses[0].id : null);
+        setCourseSelected(courses?.length ? courses[0].id : null);
     }, [courses]);
 
     useEffect(() => {

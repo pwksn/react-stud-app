@@ -4,160 +4,146 @@
   },
   "courses": [
     {
-      "name": "BSK",
-      "sem": 1,
-      "id": 2,
-      "color": "#222C67",
-      "lecture": "pn. 8:00",
-      "lab": "czw. 13:00",
-      "location": "B9, 102",
-      "lecturer": "Marek Natkaniec",
-      "upelLink": "https://yoksel.github.io/flex-cheatsheet/#section-justify-content",
-      "eLectureLink": "https://www.microsoft.com/pl-pl/microsoft-teams/group-chat-software",
-      "driveLink": "https://drive.google.com/drive/u/0/my-drive",
-      "pointsEarned": 40,
-      "pointsPossible": 44,
-      "assignments": [
-        {
-          "assignmentName": "Termin 1",
-          "assignmentType": "exam",
-          "assignmentDate": "2021-06-03",
-          "assignmentId": 1613635520082
-        }
-      ]
-    },
-    {
-      "name": "Media transmisyjne",
-      "sem": 1,
-      "id": 1,
-      "color": "#FE9C02",
-      "lecture": "wt. 14:30",
-      "lab": "śr. 11:00",
-      "location": "B9, 201",
-      "lecturer": "Wiesław Ludwin",
-      "upelLink": "https://upel2.cel.agh.edu.pl/wiet/",
-      "eLectureLink": "https://www.microsoft.com/pl-pl/microsoft-teams/group-chat-software",
-      "driveLink": "https://drive.google.com/drive/u/0/my-drive",
-      "pointsEarned": 15,
-      "pointsPossible": 30,
-      "assignments": [
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
-          "assignmentType": "test",
-          "assignmentId": 1613325169
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
-          "assignmentType": "exam",
-          "assignmentId": 1613325183
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-22",
-          "assignmentType": "task",
-          "assignmentId": 1613325199
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-21",
-          "assignmentType": "task",
-          "assignmentId": 1613325197
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-20",
-          "assignmentType": "task",
-          "assignmentId": 1613325196
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-02-18",
-          "assignmentType": "task",
-          "assignmentId": 1613325195
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-03-01",
-          "assignmentType": "task",
-          "assignmentId": 1613325194
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-03-03",
-          "assignmentType": "task",
-          "assignmentId": 1613325193
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-04-01",
-          "assignmentType": "task",
-          "assignmentId": 1613325192
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-04-12",
-          "assignmentType": "task",
-          "assignmentId": 1613325191
-        },
-        {
-          "assignmentName": "Kolos zaliczeniowy",
-          "assignmentDate": "2021-01-22",
-          "assignmentType": "task",
-          "assignmentId": 1613325190
-        }
-      ]
-    },
-    {
-      "name": "Języki skryptowe",
-      "sem": 3,
-      "color": "pink",
-      "lecture": "pt. 11:30",
-      "lab": "pn. 9:30",
-      "location": "D6, 2",
-      "lecturer": "Andrzej Matiolański",
-      "upelLink": "https://upel2.cel.agh.edu.pl/wiet/",
-      "eLectureLink": "https://www.microsoft.com/pl-pl/microsoft-teams/group-chat-software",
-      "driveLink": "https://drive.google.com/drive/u/0/my-drive",
-      "pointsEarned": 87,
-      "pointsPossible": 100,
-      "id": 3,
-      "assignments": [
-        {
-          "assignmentName": "Task 1",
-          "assignmentType": "task",
-          "assignmentDate": "2021-03-05",
-          "assignmentId": 1614201755109
-        },
-        {
-          "assignmentName": "Exam T1",
-          "assignmentType": "exam",
-          "assignmentDate": "2021-05-28",
-          "assignmentId": 1614201772557
-        },
-        {
-          "assignmentName": "Test 1",
-          "assignmentType": "test",
-          "assignmentDate": "2021-04-15",
-          "assignmentId": 1614201784805
-        }
-      ]
-    },
-    {
-      "name": "Test123",
-      "sem": 2,
-      "color": "#6b0000",
-      "lecture": "wt",
-      "lab": "pt",
+      "name": "Komunikacja i Myślenie Projektowe",
+      "color": "#e45cff",
+      "lecture": {
+        "lectureDay": "",
+        "lectureHour": ""
+      },
+      "lab": {
+        "labDay": "Mon",
+        "labHour": "13:00"
+      },
       "location": "",
       "lecturer": "",
       "upelLink": "",
       "eLectureLink": "",
       "driveLink": "",
-      "id": 4,
-      "pointsEarned": 0,
-      "pointsPossible": 0
+      "id": 2
+    },
+    {
+      "name": "Jakość Obsługi w Sieciach",
+      "color": "#ff2424",
+      "lecture": {
+        "lectureDay": "Thu",
+        "lectureHour": "12:50"
+      },
+      "lab": {
+        "labDay": "",
+        "labHour": ""
+      },
+      "location": "",
+      "lecturer": "Katarzyna Kosek-Szott",
+      "upelLink": "",
+      "eLectureLink": "",
+      "driveLink": "",
+      "id": 4
+    },
+    {
+      "name": "Zarządzanie i Ekonomia Projektów",
+      "color": "#38ff74",
+      "lecture": {
+        "lectureDay": "Tue",
+        "lectureHour": "14:40"
+      },
+      "lab": {
+        "labDay": "",
+        "labHour": ""
+      },
+      "location": "",
+      "lecturer": "Michał Grega",
+      "upelLink": "",
+      "eLectureLink": "",
+      "driveLink": "",
+      "id": 5
+    },
+    {
+      "name": "Ewolucja Sieci",
+      "color": "#b5b5b5",
+      "lecture": {
+        "lectureDay": "Wed",
+        "lectureHour": "14:40"
+      },
+      "lab": {
+        "labDay": "",
+        "labHour": ""
+      },
+      "location": "",
+      "lecturer": "Paweł Kułakowski",
+      "upelLink": "",
+      "eLectureLink": "",
+      "driveLink": "",
+      "id": 7
+    },
+    {
+      "name": "Matematyka w Analizie Sieci i Systemów",
+      "color": "#ff7b00",
+      "lecture": {
+        "lectureDay": "Wed",
+        "lectureHour": "16:15"
+      },
+      "lab": {
+        "labDay": "Thu",
+        "labHour": "16:15"
+      },
+      "location": "",
+      "lecturer": "Zdzisław Papir",
+      "upelLink": "",
+      "eLectureLink": "",
+      "driveLink": "",
+      "id": 8
+    },
+    {
+      "name": "Metody Symulacyjne",
+      "color": "#3d54ff",
+      "lecture": {
+        "lectureDay": "",
+        "lectureHour": ""
+      },
+      "lab": {
+        "labDay": "Mon",
+        "labHour": "11:45"
+      },
+      "location": "",
+      "lecturer": "Szymon Szott",
+      "upelLink": "",
+      "eLectureLink": "",
+      "driveLink": "",
+      "id": 6,
+      "assignments": [
+        {
+          "assignmentName": "Quiz 1",
+          "assignmentType": "task",
+          "assignmentDate": "2021-03-08",
+          "assignmentId": 1615128029490
+        }
+      ]
+    },
+    {
+      "name": "Bezpieczeństwo Sieci Korporacyjnych",
+      "color": "#ffe32e",
+      "lecture": {
+        "lectureDay": "Tue",
+        "lectureHour": "16:15"
+      },
+      "lab": {
+        "labDay": "Fri",
+        "labHour": "8:00"
+      },
+      "location": "",
+      "lecturer": "Piotr Pacyna",
+      "upelLink": "",
+      "eLectureLink": "",
+      "driveLink": "",
+      "id": 3,
+      "assignments": [
+        {
+          "assignmentName": "Kolos zaliczeniowy",
+          "assignmentType": "test",
+          "assignmentDate": "2021-06-08",
+          "assignmentId": 1615128076837
+        }
+      ]
     }
   ]
 }

@@ -4,9 +4,10 @@ import { useHistory, useParams } from "react-router-dom";
 const CourseForm = ({ currentFormCourse }) => {
 
     const [courseName, setCourseName] = useState('');
-    const [courseSem, setCourseSem] = useState('');
-    const [lectureDate, setLectureDate] = useState('');
-    const [labDate, setLabDate] = useState('');
+    const [lectureDay, setLectureDay] = useState('Mon');
+    const [lectureHour, setLectureHour] = useState('');
+    const [labDay, setLabDay] = useState('Mon');
+    const [labHour, setLabHour] = useState('');
     const [courseLocation, setCourseLocation] = useState('');
     const [courseLecturer, setCourseLecturer] = useState('');
     const [courseColor, setCourseColor] = useState('');
@@ -30,10 +31,12 @@ const CourseForm = ({ currentFormCourse }) => {
     }, [id]);
 
     const setEditedCourseData = () => {
+        console.log(currentFormCourse);
         setCourseName(currentFormCourse.name);
-        setCourseSem(+currentFormCourse.sem);
-        setLectureDate(currentFormCourse.lecture);
-        setLabDate(currentFormCourse.lab);
+        setLectureDay(currentFormCourse.lecture.lectureDay);
+        setLectureHour(currentFormCourse.lecture.lectureHour);
+        setLabDay(currentFormCourse.lab.labDay);
+        setLabHour(currentFormCourse.lab.labHour);
         setCourseLocation(currentFormCourse.location);
         setCourseLecturer(currentFormCourse.lecturer);
         setCourseColor(currentFormCourse.color);
@@ -46,10 +49,15 @@ const CourseForm = ({ currentFormCourse }) => {
         e.preventDefault();
         const newCourse = {
             name: courseName,
-            sem: +courseSem,
             color: courseColor,
-            lecture: lectureDate,
-            lab: labDate,
+            lecture: {
+                lectureDay: lectureDay,
+                lectureHour: lectureHour
+            },
+            lab: {
+                labDay: labDay,
+                labHour: labHour
+            },
             location: courseLocation,
             lecturer: courseLecturer,
             upelLink: upelLink,
@@ -99,35 +107,66 @@ const CourseForm = ({ currentFormCourse }) => {
                             onChange={(e) => setCourseName(e.target.value)}
                         />
                     </div>
+                </div>
+                <div className="d-flex">
                     <div>
-                        <label>Semester:</label>
-                        <input
-                            type="number"
+                        <label>Lecture day:</label>
+                        {/* <input
+                            type="text"
                             required
-                            min="1"
-                            max="3"
-                            value={courseSem}
-                            onChange={(e) => setCourseSem(e.target.value)}
+                            value={lectureDay}
+                            onChange={(e) => setLectureDay(e.target.value)}
+                        /> */}
+                        <select 
+                        value={lectureDay} 
+                        onChange={(e) => setLectureDay(e.target.value)}>
+                            <option value="Mon">Monday</option>
+                            <option value="Tue">Tuesday</option>
+                            <option value="Wed">Wednesday</option>
+                            <option value="Thu">Thursday</option>
+                            <option value="Fri">Friday</option>
+                            <option value="Sat">Saturday</option>
+                            <option value="Sun">Sunday</option>
+                            <option value="">None</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Lecture hour:</label>
+                        <input
+                            type="text"
+                            value={lectureHour}
+                            onChange={(e) => setLectureHour(e.target.value)}
                         />
                     </div>
                 </div>
                 <div className="d-flex">
                     <div>
-                        <label>Lecture date:</label>
-                        <input
+                        <label>Lab day:</label>
+                        {/* <input
                             type="text"
                             required
-                            value={lectureDate}
-                            onChange={(e) => setLectureDate(e.target.value)}
-                        />
+                            value={labDay}
+                            onChange={(e) => setLabDay(e.target.value)}
+                        /> */}
+                        <select 
+                        value={labDay} 
+                        onChange={(e) => setLabDay(e.target.value)}>
+                            <option value="Mon">Monday</option>
+                            <option value="Tue">Tuesday</option>
+                            <option value="Wed">Wednesday</option>
+                            <option value="Thu">Thursday</option>
+                            <option value="Fri">Friday</option>
+                            <option value="Sat">Saturday</option>
+                            <option value="Sun">Sunday</option>
+                            <option value="">None</option>
+                        </select>
                     </div>
                     <div>
-                        <label>Lab date:</label>
+                        <label>Lab hour:</label>
                         <input
                             type="text"
-                            required
-                            value={labDate}
-                            onChange={(e) => setLabDate(e.target.value)}
+                            value={labHour}
+                            onChange={(e) => setLabHour(e.target.value)}
                         />
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 import HomeCountdown from "./HomeCountdown/HomeCountdown"
 import useFetch from "../hooks/useFetch";
 import HomeAssignments from "./HomeAssignments/HomeAssignments";
+import HomeSchedule from "./HomeSchedule/HomeSchedule";
 
 const Home = () => {
 
@@ -13,7 +14,7 @@ const Home = () => {
                 {semester && <HomeCountdown semEndDate={semester.endDate}/>}
             </div>
             <div className="home-calendar">
-                HomeCalendar
+                <HomeSchedule courses={courses} />
             </div>
             <div className="home-assignments">
                 <HomeAssignments courses={courses} />

@@ -29,13 +29,13 @@ const CourseDetails = ({ courses, courseID, parentCallback, onCourseAssignmentsC
                     <h1> {currentCourse.name} </h1>
                 </div>
                 <div className="course-details-terms">
-                    {currentCourse.lecture && <div className="course-details-terms-lecture">
+                    {currentCourse.lecture.lectureHour && <div className="course-details-terms-lecture">
                         <ion-icon name="laptop-outline" color="#333"></ion-icon>
-                        <h3>{ currentCourse.lecture }</h3>
+                        <h3>{ currentCourse.lecture.lectureDay } { currentCourse.lecture.lectureHour }</h3>
                     </div>}
-                    {currentCourse.lab &&<div className="course-details-terms-lab">
+                    {currentCourse.lab.labHour &&<div className="course-details-terms-lab">
                         <ion-icon name="calculator-outline" color="#333"></ion-icon>
-                        <h3>{ currentCourse.lab }</h3>
+                        <h3>{ currentCourse.lab.labDay } { currentCourse.lab.labHour }</h3>
                     </div>}
                 </div>
                 <div className="course-details-lecture">

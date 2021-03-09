@@ -13,7 +13,11 @@ const CourseTile = ({ course, setDetails }) => {
                 </div>
                 <div className="course-tile-info">
                     <h3>{ course.name }</h3>
-                    <p><b>W:</b> { course.lecture }, <b>L:</b> { course.lab }</p>
+                    <p>
+                        {course.lecture.lectureHour ? <b>Lec:</b> : null} { course.lecture.lectureDay } { course.lecture.lectureHour } 
+                        {course.lecture.lectureHour && course.lab.labHour ? <b>, </b> : null}
+                        {course.lab.labHour ? <b>Lab:</b> : null} { course.lab.labDay } { course.lab.labHour }  
+                    </p>
                 </div>
             </div>
         </Link>

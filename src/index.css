@@ -300,6 +300,80 @@ a {
   font-size: 1.5rem;
 }
 
+/* Home Schedule  */
+
+.home-schedule-box {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+.home-schedule-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-schedule-daypicker {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+
+  background-color: #F2F2F2;
+  border-radius: 3rem;
+  padding: .3rem;
+  margin: 1.5rem 0;
+}
+
+.home-schedule-daypicker button {
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #F2F2F2;
+  color: #000;
+  padding: .5rem 1rem;
+  border-radius: 3rem;
+}
+
+.home-schedule-daypicker button:hover {
+  background-color: #fff;
+}
+
+.home-schedule-day {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.home-schedule-day-tile {
+  background-color: #F2F2F2;
+  min-height: 8rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.home-schedule-day-tile div {
+  justify-content: space-between;
+}
+
+.home-schedule-day-tile .home-schedule-day-tile-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.home-schedule-day-tile .home-schedule-day-tile-header div {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 1rem;
+  border-radius: 10rem;
+  justify-self: center;
+  align-self: center;
+}
+
 /* Courses */
 
 .courses-box {
@@ -339,6 +413,7 @@ a {
 
 .course-details-header {
   grid-row: 1/4;
+  grid-column: 1/-1;
   border-radius: 1rem;
   //padding: .5rem 0;
 }
@@ -349,6 +424,7 @@ a {
   grid-template-columns: 3rem 1fr;
   column-gap: 1rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .course-details-header-name h1 {
@@ -808,11 +884,11 @@ a {
   margin: 0 1rem;
 }
 
-.course-form input {
+.course-form input, .course-form select {
   width: 15rem;
   max-width: 15rem;
   line-height: 1.5rem;
-  max-height: 2rem;
+  height: 2rem;
   font-size: 1rem;
   font-weight: 500;
   border: 1px solid;
@@ -915,7 +991,7 @@ a {
   background-color: #fff;
 }
 
-.sem-active {
+.picker-button-active {
   background-color: #fff !important;
 }
 

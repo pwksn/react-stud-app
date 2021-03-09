@@ -12,16 +12,16 @@ const CoursesList = ({ courses, setCourseSelection }) => {
         setCourseSelection(e);
     }
 
-    const setActiveSemesterCourses = () => {
-        if (activeSemester === 0) {
-            setActiveCourses(courses);
-        } else {
-            const activeSemesterCourses = courses.filter(course => course.sem === activeSemester);
-            setActiveCourses(activeSemesterCourses);
-        }
-    }
+    // const setActiveSemesterCourses = () => {
+    //     if (activeSemester === 0) {
+    //         setActiveCourses(courses);
+    //     } else {
+    //         const activeSemesterCourses = courses.filter(course => course.sem === activeSemester);
+    //         setActiveCourses(activeSemesterCourses);
+    //     }
+    // }
 
-    useEffect(setActiveSemesterCourses, [activeSemester]);
+    // useEffect(setActiveSemesterCourses, [activeSemester]);
 
     return (
         <div className="courses-list">
@@ -33,7 +33,7 @@ const CoursesList = ({ courses, setCourseSelection }) => {
                     </button>
                 </Link>
             </div>
-            <SemesterPicker activeSem={activeSemester} setActiveSem={setActiveSemester}/>
+            {/* <SemesterPicker activeSem={activeSemester} setActiveSem={setActiveSemester}/> */}
             <div className="course-tiles">
                 {activeCourses.map((course) => (
                     <CourseTile course={course} key={course.id} setDetails={e => onCourseSelection(e)}/>
