@@ -4,24 +4,6 @@
   },
   "courses": [
     {
-      "name": "Zarządzanie i Ekonomia Projektów",
-      "color": "#38ff74",
-      "lecture": {
-        "lectureDay": "Tue",
-        "lectureHour": "14:40"
-      },
-      "lab": {
-        "labDay": "",
-        "labHour": ""
-      },
-      "location": "",
-      "lecturer": "Michał Grega",
-      "upelLink": "",
-      "eLectureLink": "",
-      "driveLink": "",
-      "id": 5
-    },
-    {
       "name": "Komunikacja i Myślenie Projektowe",
       "color": "#e45cff",
       "lecture": {
@@ -146,6 +128,24 @@
         }
       ],
       "id": 17
+    },
+    {
+      "name": "Zarządzanie i Ekonomia Projektów",
+      "color": "#38ff74",
+      "lecture": {
+        "lectureDay": "Tue",
+        "lectureHour": "14:40"
+      },
+      "lab": {
+        "labDay": "",
+        "labHour": ""
+      },
+      "location": "",
+      "lecturer": "Michał Grega",
+      "upelLink": "",
+      "eLectureLink": "https://l.facebook.com/l.php?u=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fteam%2F19%253af6a1cd75f01f444585446faef7664d3c%2540thread.tacv2%2Fconversations%3FgroupId%3Dcd9927bc-5afb-4f32-8264-0c8a039a7574%26tenantId%3D80b1033f-21e0-4a82-bbc0-f05fdccd3bc8%26fbclid%3DIwAR134aNEC_psz2_cNRxKPMZh0ZbxBnTytoBUtxqpxkJPrKR092csfOWxea4&h=AT1q6JrM_E4RJRUdnrTVl2QXyKjsdySiwFwcmIcfUsLTcwW0QUpdOZQE4tjaIsZKv0wc_cwRJNMO8aiX7iPRiKRAmAb_4k488cmlcoglYokaic7-jc9RdhqlxpUwzCOUKiHh2T2XfHXIzOMGmTMu&__tn__=H-R&c[0]=AT0d62IQ4gaii0TmDgGXhx_9P9K3PGFIKbmTzl-cmVa4DRjDY4HUQFb8fvpnqe7cbTAg6N_F9_Ny23u0lfAo51RIxhwmmfZcyu_717Voq0vb87ZwLjBnVGQNF_gKVnI5RqONOhVzIuXEpgQfMGIO1dt92uMm0wcsG9xfVZbKqjLXsKauCathqVru9ncJbL0nSugkw7pTArTfAD3VZg",
+      "driveLink": "",
+      "id": 18
     }
   ]
 }

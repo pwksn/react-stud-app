@@ -1,27 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from 'react-router-dom';
 import CourseTile from "./CourseTile"
-import SemesterPicker from "./SemesterPicker";
 
 const CoursesList = ({ courses, setCourseSelection }) => {
 
-    const [activeSemester, setActiveSemester] = useState(1);
     const [activeCourses, setActiveCourses] = useState(courses);
 
     const onCourseSelection = (e) => {
         setCourseSelection(e);
     }
-
-    // const setActiveSemesterCourses = () => {
-    //     if (activeSemester === 0) {
-    //         setActiveCourses(courses);
-    //     } else {
-    //         const activeSemesterCourses = courses.filter(course => course.sem === activeSemester);
-    //         setActiveCourses(activeSemesterCourses);
-    //     }
-    // }
-
-    // useEffect(setActiveSemesterCourses, [activeSemester]);
 
     return (
         <div className="courses-list">
@@ -33,7 +20,6 @@ const CoursesList = ({ courses, setCourseSelection }) => {
                     </button>
                 </Link>
             </div>
-            {/* <SemesterPicker activeSem={activeSemester} setActiveSem={setActiveSemester}/> */}
             <div className="course-tiles">
                 {activeCourses.map((course) => (
                     <CourseTile course={course} key={course.id} setDetails={e => onCourseSelection(e)}/>

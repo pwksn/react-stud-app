@@ -5,8 +5,8 @@ import HomeSchedule from "./HomeSchedule/HomeSchedule";
 
 const Home = () => {
 
-    const { data: semester, isSemesterPending, semesterError } = useFetch('http://localhost:8000/semester');
-    const { data: courses, isPending, error } = useFetch('http://localhost:8000/courses');
+    const { data: semester } = useFetch('http://localhost:8000/semester');
+    const { data: courses } = useFetch('http://localhost:8000/courses');
 
     return (
         <div className="home">
