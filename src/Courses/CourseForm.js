@@ -17,6 +17,7 @@ const CourseForm = ({ currentFormCourse }) => {
     const [assignments, setAssignments] = useState(null);
     const [pointsEarned, setPointsEarned] = useState(0);
     const [pointsPossible, setPointsPossible] = useState(0);
+    const [courseId, setCourseId] = useState(Date.now());
 
 
     const [isPostPending, setIsPostPending] = useState(false);
@@ -50,6 +51,7 @@ const CourseForm = ({ currentFormCourse }) => {
         setAssignments(currentFormCourse.assignments);
         setPointsEarned(currentFormCourse.pointsEarned);
         setPointsPossible(currentFormCourse.pointsPossible);
+        setCourseId(currentFormCourse.id);
     }
 
     const handleSubmit = (e) => {
@@ -72,17 +74,42 @@ const CourseForm = ({ currentFormCourse }) => {
             driveLink: driveLink,
             assignments: assignments,
             pointsEarned: pointsEarned,
-            pointsPossible: pointsPossible
+            pointsPossible: pointsPossible,
+            id: courseId,
         };
 
         setIsPostPending(true);
 
+        // if (id) {
+        //     fetch('http://localhost:8000/courses/' + id, {
+        //             method: 'DELETE'
+        //         }).then(() => {
+        //             fetch('http://localhost:8000/courses/' + id, {
+        //                 method: 'PUT',
+        //                 headers: { "Content-Type": "application/json"},
+        //                 body: JSON.stringify(newCourse)
+        //             }).then(() => {
+        //                 setIsPostPending(false);
+        //                 history.push('/courses/home');
+        //             })
+        //         })
+        // } else {
+        //     fetch('http://localhost:8000/course/' + newCourse.id, {
+        //         method: 'POST',
+        //         headers: { "Content-Type": "application/json"},
+        //         body: JSON.stringify(newCourse)
+        //     }).then(() => {
+        //         setIsPostPending(false);
+        //         history.push('/courses/home');
+        //     })
+        // }
+
         if (id) {
-            fetch('http://localhost:8000/courses/' + id, {
+            fetch('https://stud-w-web-app-default-rtdb.firebaseio.com/courses/' + id + '.json', {
                     method: 'DELETE'
                 }).then(() => {
-                    fetch('http://localhost:8000/courses', {
-                        method: 'POST',
+                    fetch('https://stud-w-web-app-default-rtdb.firebaseio.com/courses/' + id + '.json', {
+                        method: 'PUT',
                         headers: { "Content-Type": "application/json"},
                         body: JSON.stringify(newCourse)
                     }).then(() => {
@@ -91,8 +118,8 @@ const CourseForm = ({ currentFormCourse }) => {
                     })
                 })
         } else {
-            fetch('http://localhost:8000/courses', {
-                method: 'POST',
+            fetch('https://stud-w-web-app-default-rtdb.firebaseio.com/courses/' + newCourse.id + '.json', {
+                method: 'PUT',
                 headers: { "Content-Type": "application/json"},
                 body: JSON.stringify(newCourse)
             }).then(() => {

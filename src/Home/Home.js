@@ -5,8 +5,10 @@ import HomeSchedule from "./HomeSchedule/HomeSchedule";
 
 const Home = () => {
 
-    const { data: semester } = useFetch('http://localhost:8000/semester');
-    const { data: courses } = useFetch('http://localhost:8000/courses');
+    // const { data: semester } = useFetch('http://localhost:8000/semester');
+    const { data: semester } = useFetch('https://stud-w-web-app-default-rtdb.firebaseio.com/semester.json');
+    // const { data: courses } = useFetch('http://localhost:8000/courses');
+    const { data: courses } = useFetch('https://stud-w-web-app-default-rtdb.firebaseio.com/courses.json');
 
     return (
         <div className="home">
@@ -14,10 +16,10 @@ const Home = () => {
                 {semester && <HomeCountdown semEndDate={semester.endDate}/>}
             </div>
             <div className="home-calendar">
-                <HomeSchedule courses={courses} />
+                {courses && <HomeSchedule courses={Object.values(courses)} />}
             </div>
             <div className="home-assignments">
-                <HomeAssignments courses={courses} />
+                {courses && <HomeAssignments courses={Object.values(courses)} />}
             </div>
         </div>
     );

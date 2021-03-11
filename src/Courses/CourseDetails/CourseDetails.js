@@ -14,7 +14,12 @@ const CourseDetails = ({ courses, courseID, parentCallback, onCourseAssignmentsC
     }
 
     const handleCourseDelete = () => {
-        fetch('http://localhost:8000/courses/' + currentCourse.id, {
+        // fetch('http://localhost:8000/courses/' + currentCourse.id, {
+        //     method: 'DELETE'
+        // }).then(() => {
+        //     history.push('/');
+        // })
+        fetch('https://stud-w-web-app-default-rtdb.firebaseio.com/courses/' + currentCourse.id + '.json', {
             method: 'DELETE'
         }).then(() => {
             history.push('/');
