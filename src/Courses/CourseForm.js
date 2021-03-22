@@ -80,30 +80,6 @@ const CourseForm = ({ currentFormCourse }) => {
 
         setIsPostPending(true);
 
-        // if (id) {
-        //     fetch('http://localhost:8000/courses/' + id, {
-        //             method: 'DELETE'
-        //         }).then(() => {
-        //             fetch('http://localhost:8000/courses/' + id, {
-        //                 method: 'PUT',
-        //                 headers: { "Content-Type": "application/json"},
-        //                 body: JSON.stringify(newCourse)
-        //             }).then(() => {
-        //                 setIsPostPending(false);
-        //                 history.push('/courses/home');
-        //             })
-        //         })
-        // } else {
-        //     fetch('http://localhost:8000/course/' + newCourse.id, {
-        //         method: 'POST',
-        //         headers: { "Content-Type": "application/json"},
-        //         body: JSON.stringify(newCourse)
-        //     }).then(() => {
-        //         setIsPostPending(false);
-        //         history.push('/courses/home');
-        //     })
-        // }
-
         if (id) {
             fetch('https://stud-w-web-app-default-rtdb.firebaseio.com/courses/' + id + '.json', {
                     method: 'DELETE'

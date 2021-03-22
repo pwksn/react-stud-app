@@ -14,13 +14,7 @@ const HomeCountdown = ({ semEndDate }) => {
     const onSemesterEndDateChange = () => {
         const timestamp = Date.parse(semesterEndDate);
         setSemesterEndDate(new Date(timestamp));
-        // fetch('http://localhost:8000/semester', {
-        //     method: 'PUT',
-        //     headers: { "Content-Type": "application/json"},
-        //     body: JSON.stringify({"endDate": semesterEndDate})
-        // }).then(() => {
-        //     setSemesterEndDateEdit(!semesterEndDateEdit);
-        // })
+
         fetch('https://stud-w-web-app-default-rtdb.firebaseio.com/semester.json', {
             method: 'PUT',
             headers: { "Content-Type": "application/json"},
